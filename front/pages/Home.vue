@@ -1,5 +1,5 @@
 <template>
-  wefwef
+  <div>wefwef</div>
 </template>
 
 <script>

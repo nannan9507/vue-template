@@ -14,8 +14,8 @@ const webpackConfig = {
   resolve: {
     extensions: ['', '.js', '.vue', '.less'],
     alias: {
-      pages: '/front/pages',
-      components: '/front/pages/components'
+      'pages': path.resolve(__dirname, 'front/pages'),
+      'components': path.resolve(__dirname, 'front/pages/components') 
     }
   },
   module: {

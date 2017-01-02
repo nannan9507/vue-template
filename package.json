@@ -30,6 +30,7 @@
     "html-webpack-plugin": "^2.24.1",
     "jquery": "^3.1.1",
     "less": "^2.7.1",
+    "mint-ui": "^2.0.6",
     "reload": "^1.1.0",
     "supervisor": "^0.12.0",
     "vue": "^2.1.7",
