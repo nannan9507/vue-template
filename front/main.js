@@ -1,11 +1,16 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import VueResource from 'vue-resource'
+import { sync } from 'vuex-router-sync'
 
 import App from './App.vue'
-// import store from './store'
+import store from './store'
 import routes from './helper/routes'
 
 Vue.use(VueRouter)
+Vue.use(VueResource)
+
+sync(store, routes)
 
 
 const router = new VueRouter({
@@ -14,7 +19,7 @@ const router = new VueRouter({
 })
 
 const app = new Vue({
-  router: router,
-  //store,
+  router,
+  store,
   render: h => h(App)
 }).$mount('#app');
