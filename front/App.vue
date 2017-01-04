@@ -1,7 +1,7 @@
 <template>
   <div>
     <router-view></router-view>
-    <button @click="aaa"></button>
+    <button @click="aaa">按钮</button>
   </div>
 </template>
 
@@ -26,7 +26,8 @@ export default {
   methods: {
     ...mapActions(['saveProfile']),
     aaa() {
-      console.log(this)
+      console.log(this.$store.state.route)
+      console.log(this.profile)
     }
   }
 }

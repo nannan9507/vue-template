@@ -10,13 +10,13 @@ import routes from './helper/routes'
 Vue.use(VueRouter)
 Vue.use(VueResource)
 
-// sync(store, routes)
-
 
 const router = new VueRouter({
   mode: 'hash',
   routes: routes
 })
+
+sync(store, router)
 
 const app = new Vue({
   router,
