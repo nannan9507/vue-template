@@ -30,10 +30,6 @@ const webpackConfig = {
         loader: 'babel',
         exclude: (path) => {
           return !!path.match(/node_modules/);
-        },
-        query: {
-          presets: ["es2015", "stage-2"],
-          plugins: 'transform-runtime'
         }
       },
       {
